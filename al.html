@@ -1,28 +1,202 @@
-<h1> AL</h1>
-<p> Some YouTube channels recommended as per subject (AL)</p>
-<li> Physics: Prosperity Academy</li>
-<li> Chemistry: Prosperity Academy</li>
-<li> Biology: Prosperity Academy</li>
-<li> Computer Science: Papersdock</li>
-<li> Mathematics: Mathlete by Saad/ Zainematics</li>
-<ul><h3> Biology</h3></ul>
-<ul><li> <a href="https://drive.google.com/drive/folders/15XlJumY0SmKVzttudx9GBNLKgCGIOQyw?usp=drive_link">Practical</a></li></ul>
-<ul><li> <a href="https://drive.google.com/drive/folders/1pcM48poSxkaABBb0CG7RyZBZKucNI4wL?usp=drive_link"> Save my Exams</a></li></ul>
-<ul><li> <a href="https://drive.google.com/drive/folders/1THt8ZYWWY5A3tYYg3oNnE2Oe1J5gtggw?usp=drive_link"> Tips</a></li></ul>
-<ul><li><a href="https://drive.google.com/drive/folders/1HxQgkqUvtDQ_4XrI1PdoRkij6V3XCnIV?usp=drive_link"> Example Responses</a></li></ul>
-<ul><h3> Physics</h3></ul>
-<ul><li> <a href="https://drive.google.com/drive/folders/17NUtcI041DFt7YvrnN9W8WqhGNx8TEb6?usp=drive_link"> AS Physics Notes</a></li></ul>
-<ul><li> <a href="https://drive.google.com/drive/folders/1jAHqwenYxiG69f4Z54_u0B_HmDM0R92k?usp=drive_link"> A2 Physics Notes</a></li></ul>
-<ul><li> <a href="https://drive.google.com/drive/folders/1lV8ZYLWkNWVm7ptLlx1R22XTa0wV5d9v?usp=drive_link"> Save my Exams (AS & A2)</a></li></ul>
-<ul><li> <a href="https://drive.google.com/drive/folders/1UckJVP7vJjQo-8cIyTGy6uGzb-w_S4kU?usp=drive_link"> Example Responses</a></li></ul>
-<ul><h3> Chemistry</h3></ul>
-<ul><li> <a href="https://drive.google.com/drive/folders/1oiNS5xCczhQT4fPihzh9-3yns7gDnQ9H"> Save my Exams (AS & A2)</a></li></ul>
-<ul><li> <a href="https://drive.google.com/drive/folders/1Wj1HlWEs91s3PfsTX3iq5-crAfZJaGdv?usp=drive_link"> Example Responses</a></li></ul>
-<ul><h3> Mathematics</h3></ul>
-<ul><li><a href="https://drive.google.com/drive/folders/127FFRikidPqqcN7c29jI-kXO_lAvH6ki?usp=drive_link"> Example Responses</a></li></ul>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>parhlobhai - A Levels</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<style>
-@media (prefers-color-scheme: dark) {
-  body { background: #111; color: white; }
-}
-</style>
+        body {
+            background: #0a0a0a;
+            color: #e5e5e5;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #1f1f1f;
+        }
+
+        .nav a {
+            color: #e5e5e5;
+            text-decoration: none;
+            background: #141414;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            border: 1px solid #2a2a2a;
+        }
+
+        .nav a:hover {
+            background: #1e1e1e;
+            border-color: #4a4a4a;
+        }
+
+        .nav .home {
+            background: #d4a853;
+            color: #0a0a0a;
+            border-color: #d4a853;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: clamp(1.5rem, 5vw, 2rem);
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: clamp(1.2rem, 4vw, 1.5rem);
+            margin: 1.5rem 0 1rem 0;
+            color: #d4a853;
+        }
+
+        .section {
+            background: #0f0f0f;
+            border: 1px solid #1f1f1f;
+            border-radius: 20px;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .youtube-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .youtube-list li {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid #1a1a1a;
+            font-size: clamp(0.85rem, 3vw, 0.95rem);
+        }
+
+        .youtube-list li:last-child {
+            border-bottom: none;
+        }
+
+        .drive-link {
+            display: block;
+            background: #141414;
+            border: 1px solid #2a2a2a;
+            padding: 0.7rem 1rem;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+            color: #e5e5e5;
+            transition: all 0.2s;
+            font-size: clamp(0.85rem, 3vw, 0.9rem);
+        }
+
+        .drive-link:hover {
+            background: #1e1e1e;
+            border-color: #4a4a4a;
+            transform: translateX(4px);
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 1.5rem;
+            background: #141414;
+            border: 1px solid #2a2a2a;
+            padding: 0.7rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #e5e5e5;
+            transition: all 0.2s;
+        }
+
+        .back-home:hover {
+            background: #1e1e1e;
+            border-color: #4a4a4a;
+        }
+
+        .footer {
+            text-align: center;
+            color: #4a4a4a;
+            font-size: clamp(0.65rem, 2.5vw, 0.75rem);
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="nav">
+        <a href="index.html" class="home">← parhlobhai</a>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <a href="olevels.html">O Levels</a>
+            <a href="alevels.html">A Levels</a>
+            <a href="sat.html">SAT</a>
+        </div>
+    </div>
+
+    <h1>📚 A Levels</h1>
+    <p style="margin-bottom: 1.5rem; color: #aaa;">Free resources for Cambridge A Level and AS Level students.</p>
+
+    <div class="section">
+        <h2>📺 YouTube Channel Recommendations</h2>
+        <ul class="youtube-list">
+            <li><strong>Physics:</strong> Prosperity Academy</li>
+            <li><strong>Chemistry:</strong> Prosperity Academy</li>
+            <li><strong>Biology:</strong> Prosperity Academy</li>
+            <li><strong>Computer Science:</strong> Papersdock</li>
+            <li><strong>Mathematics:</strong> Mathlete by Saad / Zainematics</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🔬 Biology</h2>
+        <a class="drive-link" href="https://drive.google.com/drive/folders/15XlJumY0SmKVzttudx9GBNLKgCGIOQyw?usp=drive_link" target="_blank">🔬 Practical</a>
+        <a class="drive-link" href="https://drive.google.com/drive/folders/1pcM48poSxkaABBb0CG7RyZBZKucNI4wL?usp=drive_link" target="_blank">📖 Save my Exams</a>
+        <a class="drive-link" href="https://drive.google.com/drive/folders/1THt8ZYWWY5A3tYYg3oNnE2Oe1J5gtggw?usp=drive_link" target="_blank">💡 Tips</a>
+        <a class="drive-link" href="https://drive.google.com/drive/folders/1HxQgkqUvtDQ_4XrI1PdoRkij6V3XCnIV?usp=drive_link" target="_blank">📝 Example Responses</a>
+    </div>
+
+    <div class="section">
+        <h2>⚡ Physics</h2>
+        <a class="drive-link" href="https://drive.google.com/drive/folders/17NUtcI041DFt7YvrnN9W8WqhGNx8TEb6?usp=drive_link" target="_blank">📝 AS Physics Notes</a>
+        <a class="drive-link" href="https://drive.google.com/drive/folders/1jAHqwenYxiG69f4Z54_u0B_HmDM0R92k?usp=drive_link" target="_blank">📝 A2 Physics Notes</a>
+        <a class="drive-link" href="https://drive.google.com/drive/folders/1lV8ZYLWkNWVm7ptLlx1R22XTa0wV5d9v?usp=drive_link" target="_blank">📖 Save my Exams (AS & A2)</a>
+        <a class="drive-link" href="https://drive.google.com/drive/folders/1UckJVP7vJjQo-8cIyTGy6uGzb-w_S4kU?usp=drive_link" target="_blank">📝 Example Responses</a>
+    </div>
+
+    <div class="section">
+        <h2>🧪 Chemistry</h2>
+        <a class="drive-link" href="https://drive.google.com/drive/folders/1oiNS5xCczhQT4fPihzh9-3yns7gDnQ9H" target="_blank">📖 Save my Exams (AS & A2)</a>
+        <a class="drive-link" href="https://drive.google.com/drive/folders/1Wj1HlWEs91s3PfsTX3iq5-crAfZJaGdv?usp=drive_link" target="_blank">📝 Example Responses</a>
+    </div>
+
+    <div class="section">
+        <h2>📐 Mathematics</h2>
+        <a class="drive-link" href="https://drive.google.com/drive/folders/127FFRikidPqqcN7c29jI-kXO_lAvH6ki?usp=drive_link" target="_blank">📝 Example Responses</a>
+    </div>
+
+    <a href="index.html" class="back-home">← Back to Home</a>
+
+    <div class="footer">
+        <p>Built with intention. Your du'as are my fuel. 🤲</p>
+        <p>last updated: 29/3/2026</p>
+    </div>
+</div>
+</body>
+</html>

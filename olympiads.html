@@ -1,6 +1,142 @@
-<h1> coming soon</h1>
-<style>
-@media (prefers-color-scheme: dark) {
-  body { background: #111; color: white; }
-}
-</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>parhlobhai - Olympiads</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #e5e5e5;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #1f1f1f;
+            text-align: left;
+        }
+
+        .nav a {
+            color: #e5e5e5;
+            text-decoration: none;
+            background: #141414;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            border: 1px solid #2a2a2a;
+        }
+
+        .nav a:hover {
+            background: #1e1e1e;
+            border-color: #4a4a4a;
+        }
+
+        .nav .home {
+            background: #d4a853;
+            color: #0a0a0a;
+            border-color: #d4a853;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 6vw, 2.5rem);
+            margin: 3rem 0 1rem 0;
+        }
+
+        .coming-soon {
+            background: #0f0f0f;
+            border: 1px solid #1f1f1f;
+            border-radius: 24px;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+        }
+
+        .coming-soon p {
+            color: #aaa;
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .bumblebee {
+            font-size: 4rem;
+            margin: 1rem 0;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 1.5rem;
+            background: #141414;
+            border: 1px solid #2a2a2a;
+            padding: 0.7rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #e5e5e5;
+            transition: all 0.2s;
+        }
+
+        .back-home:hover {
+            background: #1e1e1e;
+            border-color: #4a4a4a;
+        }
+
+        .footer {
+            text-align: center;
+            color: #4a4a4a;
+            font-size: clamp(0.65rem, 2.5vw, 0.75rem);
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="nav">
+        <a href="index.html" class="home">← parhlobhai</a>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <a href="olevels.html">O Levels</a>
+            <a href="alevels.html">A Levels</a>
+            <a href="sat.html">SAT</a>
+        </div>
+    </div>
+
+    <div class="coming-soon">
+        <div class="bumblebee">🐝</div>
+        <h1>[Page Name]</h1>
+        <p>This page is currently under construction.</p>
+        <p style="font-size: 0.9rem;">The bumblebee is gathering resources. They'll be here soon.</p>
+        <p style="font-size: 0.8rem; margin-top: 1.5rem;">— Built with intention, for students like you —</p>
+    </div>
+
+    <a href="index.html" class="back-home">← Back to Home</a>
+
+    <div class="footer">
+        <p>Built with intention. Your du'as are my fuel. 🤲</p>
+        <p>last updated: 29/3/2026</p>
+    </div>
+</div>
+</body>
+</html>
