@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>parhlobhai - Intermediate</title>
+    <title>parhlobhai - Intermediate (FSc / FA)</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <style>
@@ -20,10 +20,9 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             width: 100%;
-            text-align: center;
         }
 
         .nav {
@@ -35,7 +34,6 @@
             margin-bottom: 2rem;
             padding-bottom: 1rem;
             border-bottom: 1px solid #1f1f1f;
-            text-align: left;
         }
 
         .nav a {
@@ -62,27 +60,92 @@
         }
 
         h1 {
-            font-size: clamp(1.8rem, 6vw, 2.5rem);
-            margin: 3rem 0 1rem 0;
+            font-size: clamp(1.5rem, 5vw, 2rem);
+            margin-bottom: 0.5rem;
         }
 
-        .coming-soon {
-            background: #0f0f0f;
-            border: 1px solid #1f1f1f;
-            border-radius: 24px;
-            padding: 3rem 2rem;
-            margin: 2rem 0;
-        }
-
-        .coming-soon p {
+        .subtitle {
             color: #aaa;
-            margin: 1rem 0;
-            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
         }
 
-        .bumblebee {
-            font-size: 4rem;
-            margin: 1rem 0;
+        /* Year Sections */
+        .year-section {
+            margin-bottom: 2rem;
+        }
+
+        .year-title {
+            font-size: 1.3rem;
+            color: #d4a853;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #d4a853;
+            display: inline-block;
+        }
+
+        /* Subjects Grid */
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.2rem;
+            margin: 1rem 0 2rem 0;
+        }
+
+        .subject-card {
+            background: #0f0f0f;
+            border: 1px solid #2a2a2a;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        .subject-card:hover {
+            border-color: #d4a853;
+        }
+
+        .subject-header {
+            background: #141414;
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid #2a2a2a;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .subject-header span {
+            color: #d4a853;
+            margin-right: 0.5rem;
+        }
+
+        .subject-content {
+            padding: 1rem;
+        }
+
+        .resource-link {
+            display: block;
+            background: #141414;
+            border: 1px solid #2a2a2a;
+            padding: 0.6rem 0.8rem;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+            color: #e5e5e5;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+            word-break: break-all;
+        }
+
+        .resource-link:hover {
+            background: #1e1e1e;
+            border-color: #4a4a4a;
+            transform: translateX(4px);
+        }
+
+        .resource-link small {
+            color: #888;
+            font-size: 0.7rem;
+            display: block;
+            margin-top: 0.2rem;
         }
 
         .back-home {
@@ -106,9 +169,15 @@
             text-align: center;
             color: #4a4a4a;
             font-size: clamp(0.65rem, 2.5vw, 0.75rem);
-            margin-top: 3rem;
+            margin-top: 2rem;
             padding-top: 1.5rem;
             border-top: 1px solid #1a1a1a;
+        }
+
+        @media (max-width: 700px) {
+            .subjects-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -123,19 +192,153 @@
         </div>
     </div>
 
-    <div class="coming-soon">
-        <div class="bumblebee">🐝</div>
-        <h1>[Page Name]</h1>
-        <p>This page is currently under construction.</p>
-        <p style="font-size: 0.9rem;">The bumblebee is gathering resources. They'll be here soon.</p>
-        <p style="font-size: 0.8rem; margin-top: 1.5rem;">— Built with intention, for students like you —</p>
+    <h1>📚 Intermediate (FSc / FA)</h1>
+    <div class="subtitle">Free resources for 1st year and 2nd year students — notes, past papers, and study materials</div>
+
+    <!-- 1st Year Section -->
+    <div class="year-section">
+        <div class="year-title">📖 1st Year (11th Class)</div>
+        <div class="subjects-grid">
+            <!-- Biology -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>🔬</span> Biology
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/1-0RkU7o_zsI2WhHTcqbljZWd7hc4JvIa?usp=drive_link" class="resource-link" target="_blank">📚 Complete Biology Resources <small>Notes, past papers, exercises</small></a>
+                </div>
+            </div>
+
+            <!-- Chemistry -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>🧪</span> Chemistry
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/1-6ltOjHDPcG2uWOp1eLhwhjpT5BBmIxa?usp=drive_link" class="resource-link" target="_blank">📚 Complete Chemistry Resources <small>Notes, past papers, exercises</small></a>
+                </div>
+            </div>
+
+            <!-- English -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>📖</span> English
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/1lpg8Skp4KCT9O6D9yBUsj2Y4vLc5MNmh?usp=drive_link" class="resource-link" target="_blank">📚 Complete English Resources <small>Grammar, essays, literature</small></a>
+                </div>
+            </div>
+
+            <!-- Mathematics -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>📐</span> Mathematics
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/1l9bIrbJEM-2MbjacQeRL10Ctul14UHAF?usp=drive_link" class="resource-link" target="_blank">📚 Complete Mathematics Resources <small>Formulas, solved exercises</small></a>
+                </div>
+            </div>
+
+            <!-- Physics -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>⚡</span> Physics
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/1l9bIrbJEM-2MbjacQeRL10Ctul14UHAF?usp=drive_link" class="resource-link" target="_blank">📚 Complete Physics Resources <small>Notes, numericals, past papers</small></a>
+                </div>
+            </div>
+
+            <!-- General Resources -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>📂</span> General Resources
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/13TsPSBKYzifUvJG8puNzJwpF3wiFpa9b?usp=drive_link" class="resource-link" target="_blank">📚 1st Year General Study Material <small>Comprehensive collection</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd Year Section -->
+    <div class="year-section">
+        <div class="year-title">📖 2nd Year (12th Class)</div>
+        <div class="subjects-grid">
+            <!-- Biology -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>🔬</span> Biology
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/1sYGjrgTjMRMORJmhYndB8fSsuPVL-GPu?usp=drive_link" class="resource-link" target="_blank">📚 Complete Biology Resources <small>Notes, past papers, exercises</small></a>
+                </div>
+            </div>
+
+            <!-- Chemistry -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>🧪</span> Chemistry
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/1NlKlRMFiGzaZyZzGFVIr8T4-8kO44Z5c?usp=drive_link" class="resource-link" target="_blank">📚 Complete Chemistry Resources <small>Notes, past papers, exercises</small></a>
+                </div>
+            </div>
+
+            <!-- English -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>📖</span> English
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/1aLF1YmdxbzAOYzIzSOQKE_lnUbMwCW1u?usp=drive_link" class="resource-link" target="_blank">📚 Complete English Resources <small>Grammar, essays, literature</small></a>
+                </div>
+            </div>
+
+            <!-- Mathematics -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>📐</span> Mathematics
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/1sFDeswOflYCqWKXJ8Ier7WkAdnSzq1Si?usp=drive_link" class="resource-link" target="_blank">📚 Complete Mathematics Resources <small>Formulas, solved exercises</small></a>
+                </div>
+            </div>
+
+            <!-- Physics -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>⚡</span> Physics
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/12DAivr40aJ8nY6u9CW3guzO2pyI2V0YD?usp=drive_link" class="resource-link" target="_blank">📚 Complete Physics Resources <small>Notes, numericals, past papers</small></a>
+                </div>
+            </div>
+
+            <!-- General Resources -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <span>📂</span> General Resources
+                </div>
+                <div class="subject-content">
+                    <a href="https://drive.google.com/drive/folders/1lBRBPHGm3b7MwsZertqsBRXRyfzGkZwb?usp=drive_link" class="resource-link" target="_blank">📚 2nd Year General Study Material <small>Comprehensive collection</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Note: Physics and Math links for 1st year appear to be the same -->
+    <div style="background: #0f0f0f; border: 1px solid #1f1f1f; border-radius: 20px; padding: 1rem; margin-top: 1rem; text-align: center;">
+        <p style="color: #888; font-size: 0.8rem;">📌 <strong>Note:</strong> 1st year Physics and Mathematics share the same folder. All resources are free and open for everyone.</p>
+        <p style="color: #666; font-size: 0.7rem; margin-top: 0.5rem;">More resources being added regularly. If you have materials to contribute, please use the submission form.</p>
     </div>
 
     <a href="index.html" class="back-home">← Back to Home</a>
 
     <div class="footer">
         <p>Built with intention. Your du'as are my fuel. 🤲</p>
-        <p>last updated: 29/3/2026</p>
+        <p>No ads. No paywalls. Free forever.</p>
+        <p>last updated: March 2026</p>
     </div>
 </div>
 </body>
